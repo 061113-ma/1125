@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>亲子故事会 · Kids Story Time</title>
+    <style>
+        /* 清除浏览器默认边距，实现背景全覆盖 + 页面居中 */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #FCE9C9;
+            text-align: center;
+        }
+
+        /* 作业要求：.page仅修改background-color，其余属性原样保留 */
+        .page {
+            display: inline-block;
+            background-color: #FCE9C9;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+        }
+
+        /* 并集选择器 h1-h6 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #8b4513;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        /* ID选择器 p#intro：加粗+放大+红色强调 */
+        p#intro {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #c82423;
+        }
+
+        /* 后代选择器 div table a */
+        div table a {
+            text-decoration: none;
+            color: #226699;
+        }
+
+        /* 链接伪类 */
+        a:link {
+            color: #226699;
+        }
+        a:visited {
+            color: #663366;
+        }
+        a:hover {
+            color: #ff4444;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #000000;
+        }
+
+        /* 类链接 shtur / shturl */
+        shtur {
+            font-size: 1.1em;
+            color: #dd2222;
+        }
+        shturl {
+            font-size: 1.1em;
+            color: #2244dd;
+        }
+
+        /* 伪元素选择器 */
+        p::first-letter {
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+        div::first-line {
+            font-style: italic;
+        }
+
+        /* 表格美化 */
+        table {
+            border-collapse: collapse;
+            width: 95%;
+            margin: 10px auto;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+        }
+        th {
+            background: #ffe8bc;
+        }
+        .notice {
+            margin: 20px 15px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ① 顶部标题区 -->
+        <div>
+            <h1>亲子故事会 · Kids Story Time</h1>
+        </div>
+
+        <!-- ② 活动介绍区 -->
+        <div>
+            <h2 id="intro">活动介绍</h2>
+            <p>欢迎各位爸爸妈妈和小朋友来到温馨的亲子故事会！在这里，大朋友陪着小朋友一起聆听奇妙童话，感受故事里的喜怒哀乐。我们希望用温柔的故事，点亮孩子的小小世界。</p>
+            <p>每一次故事分享，都是一次温暖的陪伴。小朋友可以大胆上台讲述自己喜欢的小故事，也可以安安静静坐在台下听别人分享，没有压力，只有欢声笑语。</p>
+            <p id="intro">重要提示：参加活动请家长陪同小朋友到场，记得带上水杯，保管好随身小玩具哦！</p>
+        </div>
+
+        <!-- ③ 报名信息表格区 -->
+        <div>
+            <h3>亲子报名信息表</h3>
+            <table>
+                <tr>
+                    <th>报名家庭</th>
+                    <th>小朋友昵称</th>
+                    <th>分享故事名称</th>
+                    <th>到场人数</th>
+                </tr>
+                <tr>
+                    <td>李家庭</td>
+                    <td>多多</td>
+                    <td>小兔子的彩虹梦</td>
+                    <td>2人</td>
+                </tr>
+                <tr>
+                    <td>张家庭</td>
+                    <td>朵朵</td>
+                    <td>小熊找朋友</td>
+                    <td>3人</td>
+                </tr>
+                <tr>
+                    <td>王家庭</td>
+                    <td>阳阳</td>
+                    <td>小蚂蚁历险记</td>
+                    <td>2人</td>
+                </tr>
+                <tr>
+                    <td>刘家庭</td>
+                    <td>糖糖</td>
+                    <td>月亮晚安</td>
+                    <td>2人</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ④ 页面链接区 -->
+        <div>
+            <div>
+                <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a>
+                <br>
+                <a class="blue" href="job3.html">在线咨询活动详情</a>
+            </div>
+        </div>
+
+        <!-- ⑤ 底部公告区 -->
+        <div class="notice">
+            公告一：本故事会每周六下午两点准时开展，欢迎新家庭前来体验。<br>
+            公告二：现场会准备绘本读物，请勿随意撕毁涂鸦，爱护公共图书。<br>
+            公告三：如果临时无法到场，请提前通过咨询链接告知我们，方便我们调整座位。<br>
+            公告四：活动结束后可以带走小朋友的手绘小作品，留下美好回忆。
+        </div>
+    </div>
+</body>
+</html>
